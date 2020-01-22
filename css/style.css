@@ -1,0 +1,11 @@
+/* base styles */
+* {
+    font-family: 'Merriweather', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Media Queries*/
+
+@media all and (min-width: 768px) {
+
+}
