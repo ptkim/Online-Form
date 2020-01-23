@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700&display=swap" rel="stylesheet">
     <title>Online Registration Form</title>
 </head>
 <body>
@@ -14,25 +14,25 @@
         <h1>The Code Review</h1>
         <h2>Signup for our newsletter</h2>
         <p class="subtitle">Get the latest news on how your code is doing right in your inbox</p>
-        <hr>
-        <hr>
+        <hr class="twoPx line">
+        <hr class="onePx line">
     </header>
-    <body>
+
         <form action="/my-code-news" method="post">
             <fieldset>
                 <legend>Contact Information</legend>
-                <label for="name">Name</label> <input type="text" id="name" name="user_name" required>
-                <label for="email">Email</label><input type="email" id="email" name="user_email" required>
+                <label for="name">Full Name</label> <input type="text" id="name" name="user_name" required placeholder="Required">
+                <label for="email">Email Address</label><input type="email" id="email" name="user_email" required placeholder="Required">
                 <label for="phone">Phone Number</label><input type="number" id="phone" name="user_phone">
                 <label for="address">Street Address</label><input type="text" id="address" name="user_address">
                 <label for="city">City</label><input type="text" id="city" name="user_city">
-                <label for="state">State</label>
-                    <select>
+                <label>State</label>
+                    <select class="state_select">
                         <option value="choose">Choose State</option>
                     </select>
                 <label for="zipcode">Zip Code</label><input type="number" id="zipcode" name="user_zipcode">
             </fieldset>
-            <hr>
+            <hr class="onePx line">
             <fieldset>
                 <legend>Newsletter</legend>
                 <label>Select the newsletter you would like to receive</label>
@@ -46,13 +46,17 @@
 
                 <label>Newsletter format</label>
                 <ul>
-                    <li><input type="radio" id="html_format" value="format_html" name="newsletter_format"><label></label></li>
+                    <li><input type="radio" id="html_format" value="format_html" name="newsletter_format"><label for="html_format">HTML</label></li>
+                    <li><input type="radio" id="plain_format" value="format_plain" name="newsletter_format"><label for="plain_format">Plain text</label></li>
                 </ul>
-
-                    
+                <label>Other topics you'd like to hear about</label><textarea id="other" name="other_topics"></textarea>   
             </fieldset>
 
+            <input type="submit" value="Sign Up">
         </form>
+        <footer>
+            <p>Copyright The Code Review</p>
+        </footer>
     </body>
-</body>
+    
 </html>
