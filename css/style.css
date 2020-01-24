@@ -62,39 +62,44 @@ legend {
     margin-bottom: 16px;
 }
 
+.contactInputs label,
 label {
     color: #55687A;
     font-size: 14px;
     letter-spacing: 0.1em;
     font-weight: 300;
-    margin-bottom: 12px;
     margin-left: 2px;
 }
 
 input[type="text"],
-input[type="number"],
 input[type="email"],
-.state_select,
+input[type="tel"],
+#state_select,
 textarea {
     background-color: #eff0f1;
     border: none;
     border-radius: 4px;
     width: 99%;
-    margin: 0px auto 16px;
+    margin: 12px auto 16px;
     height: 48px;
     padding: 4px 12px;
 }
 
 #zipcode {
-    width: 50%;
     margin-right: auto;
     margin-left: 2px;
+    width: 50%;
 } 
 
+
+.zipInput label{
+    display: block;
+}
+
 input[type="text"]:focus,
-input[type="number"]:focus,
 input[type="email"]:focus,
-.state_select:focus,
+input[type="tel"]:focus,
+#state_select:focus,
 textarea:focus {
     outline: none;
     box-shadow: 0 0 1px 2px #2d3945;
@@ -102,7 +107,7 @@ textarea:focus {
 
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
-.state_select {
+#state_select {
     color:#adb2b7;
 }
 
@@ -111,6 +116,7 @@ input[type="email"]::placeholder {
     text-align: right;
     font-style: italic;
     font-size: 14px;
+    padding-right: 4px;
 }
 
 ul li{
@@ -124,11 +130,13 @@ input[type="radio"] {
 }
 
 ul {
-    margin-bottom: 24px;
+    margin: 24px 0px;
 }
 
-textarea {
+#other {
     height: 150px;
+    padding: 12px;
+    margin-top: 24px;
 }
 
 .buttonArea{
@@ -159,5 +167,34 @@ footer p {
 /* Media Queries*/
 
 @media all and (min-width: 768px) {
+    main,
+    footer,
+    .intro{
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .contactInputs label {
+        display: flex;
+        align-items: center;
+        width: 200px;
+    }
+
+    .contactInputs {
+        display: flex;
+    }
+
+    .zipInput label {
+        width: 156px;
+    }
+
+    #zipcode {
+        width: 30%;
+    }
+
+  
+
+
+    
 
 }
