@@ -28,7 +28,8 @@
                 <label for="city">City</label><input type="text" id="city" name="user_city">
                 <label>State</label>
                     <select class="state_select">
-                        <option value="choose">Choose State</option>
+                        <option value="choose" class="state_option">Choose State</option>
+                        <option value="choose">Choose College</option>
                     </select>
                 <label for="zipcode">Zip Code</label><input type="number" id="zipcode" name="user_zipcode">
             </fieldset>
@@ -51,8 +52,9 @@
                 </ul>
                 <label>Other topics you'd like to hear about</label><textarea id="other" name="other_topics"></textarea>   
             </fieldset>
-
-            <input type="submit" value="Sign Up">
+            <div class="buttonArea">
+                <input type="submit" value="Sign Up">
+            </div>  
         </form>
         <footer>
             <p>Copyright The Code Review</p>
