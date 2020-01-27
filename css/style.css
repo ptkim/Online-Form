@@ -85,6 +85,7 @@ textarea {
     padding: 4px 12px;
 }
 
+
 #zipcode {
     margin-right: auto;
     margin-left: 2px;
@@ -107,16 +108,26 @@ textarea:focus {
 
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
-#state_select {
+#state_select,
+input[type="tel"]::placeholder {
     color:#adb2b7;
 }
 
 input[type="text"]::placeholder,
-input[type="email"]::placeholder {
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder {
     text-align: right;
     font-style: italic;
     font-size: 14px;
     padding-right: 4px;
+}
+
+input:invalid:focus:not(:placeholder-shown){
+    background-color: lightcoral;
+}
+
+input:focus {
+    background: #cccccc;
 }
 
 ul li{
@@ -164,6 +175,13 @@ footer p {
     margin: 24px 0px 40px 0px;
     font-size: 14px;
 }
+ .Newsletter {
+     background-color: #C2D6FF;
+     padding-top: 24px;
+     width: 95%;
+     margin-right: auto;
+     margin-left: auto;
+ }
 /* Media Queries*/
 
 @media all and (min-width: 768px) {
