@@ -127,7 +127,7 @@ input:invalid:focus:not(:placeholder-shown){
 }
 
 input:focus {
-    background: #cccccc;
+    background: #dddddd;
 }
 
 ul li{
@@ -176,7 +176,7 @@ footer p {
     font-size: 14px;
 }
  .Newsletter {
-     background-color: #C2D6FF;
+     background-color: #D3E0FB;
      padding-top: 24px;
      width: 95%;
      margin-right: auto;
