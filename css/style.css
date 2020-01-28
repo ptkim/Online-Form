@@ -127,7 +127,8 @@ input:invalid:focus:not(:placeholder-shown){
 }
 
 input:focus {
-    background: #dddddd;
+    background: #fff;
+    transition: background-color 800ms ease-in-out;
 }
 
 ul li{
